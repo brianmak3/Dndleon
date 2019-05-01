@@ -48,7 +48,7 @@ const
     // should not be compressed.
   }
 });
- mongoose.connect('mongodb://127.0.0.1/sagar',{ useNewUrlParser: true } );
+ mongoose.connect('mongodb://sagaradmin:sagarpass@127.0.0.1/sagar');
 app.use(cors());
 app.use(express.static('www'));
 app.use(express.static(path.join(__dirname, 'public')));
